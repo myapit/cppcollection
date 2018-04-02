@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/18-forms-windows.dir/windows.c.o  -o 18-forms-windows -rdynamic -lcurses -lform 

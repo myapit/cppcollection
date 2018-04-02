@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/16-panels-basics.dir/basics.c.o  -o 16-panels-basics -rdynamic -lcurses -lpanel 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/08-attributes-chgat.dir/chgat.c.o  -o 08-attributes-chgat -rdynamic -lcurses 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/11-keyboard-main.dir/main.c.o  -o 11-keyboard-main -rdynamic -lcurses 

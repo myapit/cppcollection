@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/14-misc-acs-variables.dir/acs-variables.c.o  -o 14-misc-acs-variables -rdynamic -lcurses 

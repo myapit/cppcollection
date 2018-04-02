@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/06-output-functions-main.dir/main.c.o  -o 06-output-functions-main -rdynamic -lcurses 

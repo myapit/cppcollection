@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/12-mouse-main.dir/main.c.o  -o 12-mouse-main -rdynamic -lcurses 

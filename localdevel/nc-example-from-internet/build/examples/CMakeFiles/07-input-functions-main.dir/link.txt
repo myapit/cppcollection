@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/07-input-functions-main.dir/main.c.o  -o 07-input-functions-main -rdynamic -lcurses 

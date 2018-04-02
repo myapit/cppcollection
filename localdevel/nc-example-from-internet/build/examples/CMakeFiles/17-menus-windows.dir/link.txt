@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/17-menus-windows.dir/windows.c.o  -o 17-menus-windows -rdynamic -lcurses -lmenu 

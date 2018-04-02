@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/09-windows-border.dir/border.c.o  -o 09-windows-border -rdynamic -lcurses 

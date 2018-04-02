@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/14-misc-leave-ncurses.dir/leave-ncurses.c.o  -o 14-misc-leave-ncurses -rdynamic -lcurses 

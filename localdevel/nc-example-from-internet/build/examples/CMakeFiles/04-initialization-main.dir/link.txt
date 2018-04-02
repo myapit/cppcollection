@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/04-initialization-main.dir/main.c.o  -o 04-initialization-main -rdynamic -lcurses 

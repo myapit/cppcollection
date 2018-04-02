@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/16-panels-show-hide.dir/show-hide.c.o  -o 16-panels-show-hide -rdynamic -lcurses -lpanel 
