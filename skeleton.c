@@ -10,7 +10,7 @@ Runnning : ./skeleton
 #include <stdio.h> /* Standard Input Output */
 #include <stdlib.h> /* Standard library */
 
-int main( int argc, char *argv[])
+int main( int argc, char *argv[] )
 {
 
   return 0;
