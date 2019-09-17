@@ -1,4 +1,4 @@
-#Filename: Makefile
+#Filename: makefile
 #Author : myapit
 #E-mail : 9w2xhr@gmail.com
 #Purpose: Basic skeleton makefile
