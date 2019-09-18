@@ -1,3 +1,9 @@
+/*
+Author : myapit
+E-mail : 9w2xhr@gmail.com
+Purpose: Learning note
+*/
+
 #include <iostream>
 #include <string>
 
