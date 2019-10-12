@@ -1,0 +1,40 @@
+https://github.com/schacon/ticgit
+
+
+ti list     - show all tickets
+ti show     - show details of a specific ticket
+ti new      - create a new ticket
+ti checkout - checkout a ticket
+ti state    - change a ticket state (open, resolved, invalid, hold)
+ti comment  - add a comment to a ticket
+ti tag      - add or delete a tag from a ticket
+ti assign   - change to whom a ticket is assigned
+
+
+Structure Design
+---------------
+https://github.com/chris84948/BugTracker
+ID (auto ID)
+Issue Type (Bug, Features , etc)
+State (Open, Closed, Unresolved)
+Desc (Details of bug, features, etc)
+Priority (High, Low)
+Severity (Critical, High, Medium, Low)
+Created By
+Create On
+Modified On
+Log
++
+Version_Found
+Version_Fixed
+Workaround
+Steps to reproduce
+Proposed/Implemented Fix
+
+
+
+git config -etc
+[credentials]
+helper=cache
+
+wincred,cache,store
