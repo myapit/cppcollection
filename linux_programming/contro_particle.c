@@ -463,3 +463,4 @@ int main(int argc, char *argv[])
   return 0;
 }
 
+//gcc -Wall -pedantic -lSDLmain -lSDL2 -lSDL2_image  contro_particle.c
