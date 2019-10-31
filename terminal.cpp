@@ -29,7 +29,7 @@ void terminal_menu()
     std::cout << "\\  /\\  / (_| | |  | \\__ \\" << std::endl;
     std::cout << " \\/  \\/ \\__,_|_|  |_|___/" << std::endl; */
 
-    /*
+   
     std::cout << "                                    " << std::endl 
               <<"██╗    ██╗ █████╗ ██████╗ ██╗███████╗ "  << std::endl
               <<"██║    ██║██╔══██╗██╔══██╗██║██╔════╝ "  << std::endl
@@ -37,8 +37,8 @@ void terminal_menu()
               <<"██║███╗██║██╔══██║██╔══██╗██║╚════██║ "  << std::endl
               <<"╚███╔███╔╝██║  ██║██║  ██║██║███████║ "  << std::endl
               <<" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ "  << std::endl;
-    */
     
+/*    
     printw("██╗    ██╗ █████╗ ██████╗ ██╗███████╗\n");
     printw("██║    ██║██╔══██╗██╔══██╗██║██╔════╝\n");
     printw("██║ █╗ ██║███████║██████╔╝██║███████╗\n");
@@ -46,17 +46,26 @@ void terminal_menu()
     printw(" ███╔███╔╝██║  ██║██║  ██║██║███████║\n");
     printw(" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝\n");
                                               
-
+*/
 
     //nc.refresh();
 }
 
 int main() //int argc, char *argv[])
 {
-    ncurseswrap nc;
+  //  ncurseswrap nc;
+  //  attron(A_ALTCHARSET);
+   // initscr();
+   // (void)echo();
+    //refresh();
+    std::cout.flush();
+    std::cout << "\033[2J\033[1;1H";
     terminal_menu();
+  //  attroff(A_ALTCHARSET);
     //nc.refresh();
-    getch();
+    //wrefresh(startScreen);
+    //getch();
+    std::cin.get();
     return 0;
 }
 
