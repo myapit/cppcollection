@@ -21,7 +21,7 @@ class ncursewrap
 
 void terminal_menu()
 {
-    ncursewrap nc;
+//ncursewrap nc;
     /* std::cout << "_    _            _ " << std::endl;    
     std::cout << "| |  | |          (_) " << std::endl;   
     std::cout << "| |  | | __ _ _ __ _ ___ " << std::endl;
@@ -35,9 +35,9 @@ void terminal_menu()
               <<"██║ █╗ ██║███████║██████╔╝██║███████╗ "  << std::endl
               <<"██║███╗██║██╔══██║██╔══██╗██║╚════██║ "  << std::endl
               <<"╚███╔███╔╝██║  ██║██║  ██║██║███████║ "  << std::endl
-              <<"╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ "  << std::endl;
+              <<" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ "  << std::endl;
                                            
-    nc.refresh();
+   // nc.refresh();
 }
 
 int main(int argc, char *argv[])
