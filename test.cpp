@@ -9,15 +9,18 @@
 #include <string>
 #include <ncurses.h>
 
-#include "linux_programming/termcolor.hpp"
+//#include "linux_programming/termcolor.hpp"
 
-class ncurseswrap
+/*
+class ncursewrap
 {
     public:
-        ncurseswrap()   { initscr();    }
-        ~ncurseswrap()  { endwin();     }
+        ncursewrap()   { initscr();    }
+        ~ncursewrap()  { endwin();     }
         void refresh() { ::refresh();  }
 };
+*/
+
 
 void terminal_menu()
 {
@@ -53,10 +56,14 @@ void terminal_menu()
 
 int main() //int argc, char *argv[])
 {
-    ncurseswrap nc;
-    terminal_menu();
-    //nc.refresh();
+    initscr();
+    
+    //terminal_menu();
+    printw("hello");
+    refresh();
     getch();
+    endwin();
+
     return 0;
 }
 
