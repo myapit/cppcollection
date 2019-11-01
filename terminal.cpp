@@ -13,7 +13,7 @@
 
 void terminal_header()
 {
-    std::cout << termcolor::red << std::setfill('=') << std::setw(100) << termcolor::reset << std::endl; 
+    //std::cout << termcolor::bold << termcolor::red << std::setfill('=') << std::setw(100) << termcolor::reset << std::endl; 
     //std::cout << 
     std::cout << std::setfill(' ') << std::setw(30) << termcolor::red <<"██╗    ██╗ █████╗ ██████╗ ██╗███████╗ "  << termcolor::reset << std::endl
               << std::setfill(' ') << std::setw(30) << termcolor::red <<"██║    ██║██╔══██╗██╔══██╗██║██╔════╝ "  << termcolor::reset << std::endl
@@ -23,7 +23,8 @@ void terminal_header()
               << std::setfill(' ') << std::setw(30) << termcolor::red <<" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝  V 1.0"  << termcolor::reset << std::endl
               << termcolor::reset;
     std::cout << std::setfill(' ') << std::setw(23) << termcolor::red << "Web Application Registration System Managemnt Tools" << termcolor::reset << std::endl; 
-    std::cout << termcolor::red << std::setfill('=') << std::setw(100) << termcolor::reset << std::endl; 
+    std::cout << std::setfill(' ') << std::setw(23) << std::flush << termcolor::red << std::setfill('=') << std::setw(20) << "xx" << termcolor::reset << std::endl; 
+    //std::cout << termcolor::red << std::setfill('=') << std::setw(100) << termcolor::reset << std::endl; 
 }
 
 void display_menu()
