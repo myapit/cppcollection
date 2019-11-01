@@ -7,68 +7,30 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-#include <ncurses.h>
 
 #include "linux_programming/termcolor.hpp"
 
-class ncurseswrap
+
+void terminal_header()
 {
-    public:
-        ncurseswrap()   { initscr();    }
-        ~ncurseswrap()  { endwin();     }
-        void refresh() { ::refresh();  }
-};
-
-void terminal_menu()
-{
-    //ncursewrap nc;
-    /* std::cout << "_    _            _ " << std::endl;    
-    std::cout << "| |  | |          (_) " << std::endl;   
-    std::cout << "| |  | | __ _ _ __ _ ___ " << std::endl;
-    std::cout << "| |/\\| |/ _` | '__| / __|" << std::endl;
-    std::cout << "\\  /\\  / (_| | |  | \\__ \\" << std::endl;
-    std::cout << " \\/  \\/ \\__,_|_|  |_|___/" << std::endl; */
-
-   
-	std::cout << std::setfill('*') << std::setw(80) << std::endl; 
-//	std::cout << std::setfill('x') << std::setw(10)  << std::endl;
-     std::cout << " " << std::endl 
-	      << "                                    " << std::endl 
-              << termcolor::yellow
-	      <<"██╗    ██╗ █████╗ ██████╗ ██╗███████╗ "  << std::endl
-              <<"██║    ██║██╔══██╗██╔══██╗██║██╔════╝ "  << std::endl
-              <<"██║ █╗ ██║███████║██████╔╝██║███████╗ "  << std::endl
-              <<"██║███╗██║██╔══██║██╔══██╗██║╚════██║ "  << std::endl
-              <<"╚███╔███╔╝██║  ██║██║  ██║██║███████║ "  << std::endl
-              <<" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝ "  << std::endl << termcolor::reset;
-    
-/*    
-    printw("██╗    ██╗ █████╗ ██████╗ ██╗███████╗\n");
-    printw("██║    ██║██╔══██╗██╔══██╗██║██╔════╝\n");
-    printw("██║ █╗ ██║███████║██████╔╝██║███████╗\n");
-    printw("██║███╗██║██╔══██║██╔══██╗██║╚════██║\n");
-    printw(" ███╔███╔╝██║  ██║██║  ██║██║███████║\n");
-    printw(" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝\n");
-                                              
-*/
-
-    //nc.refresh();
+    std::cout << termcolor::red << std::setfill('=') << std::setw(100) << termcolor::reset << std::endl; 
+    //std::cout << 
+    std::cout << std::setfill(' ') << std::setw(30) << termcolor::red <<"██╗    ██╗ █████╗ ██████╗ ██╗███████╗ "  << termcolor::reset << std::endl
+              << std::setfill(' ') << std::setw(30) << termcolor::red <<"██║    ██║██╔══██╗██╔══██╗██║██╔════╝ "  << termcolor::reset << std::endl
+              << std::setfill(' ') << std::setw(30) << termcolor::red <<"██║ █╗ ██║███████║██████╔╝██║███████╗ "  << termcolor::reset << std::endl
+              << std::setfill(' ') << std::setw(30) << termcolor::red <<"██║███╗██║██╔══██║██╔══██╗██║╚════██║ "  << termcolor::reset << std::endl
+              << std::setfill(' ') << std::setw(30) << termcolor::red <<"╚███╔███╔╝██║  ██║██║  ██║██║███████║ "  << termcolor::reset << std::endl
+              << std::setfill(' ') << std::setw(30) << termcolor::red <<" ╚══╝╚══╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝╚══════╝  V 1.0"  << termcolor::reset << std::endl
+              << termcolor::reset;
+    std::cout << std::setfill(' ') << std::setw(23) << termcolor::red << "Web Application Registration System Managemnt Tools" << termcolor::reset << std::endl; 
+    std::cout << termcolor::red << std::setfill('=') << std::setw(100) << termcolor::reset << std::endl; 
 }
 
-int main() //int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-  //  ncurseswrap nc;
-  //  attron(A_ALTCHARSET);
-   // initscr();
-   // (void)echo();
-    //refresh();
     std::cout.flush();
     std::cout << "\033[2J\033[1;1H";
-    terminal_menu();
-  //  attroff(A_ALTCHARSET);
-    //nc.refresh();
-    //wrefresh(startScreen);
-    //getch();
+    terminal_header();
     std::cin.get();
     return 0;
 }
