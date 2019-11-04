@@ -1,0 +1,6 @@
+
+# Mac desktop service store files
+.DS_Store
+*.o
+*.o
+progress_bar
