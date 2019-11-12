@@ -22,6 +22,10 @@ int main()
     for (int i = 0; i != 5; ++i)
         cout << mynum[i];
     
+    //other short example
+    char a[] = {'a','b','c'};
+    for (char& x : a) { std::cout << x ; }
+    
     cout << endl;
     return 0;
 }
