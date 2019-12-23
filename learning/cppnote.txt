@@ -1,0 +1,3 @@
+Extension of filename:
+C++ code = .cpp , .cc
+C code   = .c
