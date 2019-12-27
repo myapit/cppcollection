@@ -1,0 +1,37 @@
+#
+# In order to execute this "Makefile" just type "make"
+#	A. Delis (ad@di.uoa.gr)
+#
+
+OBJS	= list.o main.o
+SOURCE	= list.cc main.cc
+HEADER	= list.hpp
+OUT	= linkedlist.exe
+CC	 = g++
+FLAGS	 = -g -c -Wall
+LFLAGS	 = -lpthread
+# -g option enables debugging mode 
+# -c flag generates object code for separate files
+
+
+all: $(OBJS)
+	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
+
+linkedlist.exe: $(OBJS)
+	$(CC) -g $(OBJS) -o $(OUT)
+
+# create/compile the individual files >>separately<<
+list.o: list.cc
+	$(CC) $(FLAGS) list.cc -std=c++17 -lcunit -lcppunit
+
+main.o: main.cc
+	$(CC) $(FLAGS) main.cc -std=c++17 -lcunit -lcppunit
+
+
+# clean house
+clean:
+	rm -f $(OBJS) $(OUT)
+
+# run the program
+run: $(OUT)
+	./$(OUT)
